@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark">
+  <div class="app">
+    <aside class="sidebar">
+      <h2 class="logo">kanban</h2>
+      <div class="boards">
+        <p>ALL BOARDS (3)</p>
+        <ul>
+          <li class="active">Platform Launch</li>
+          <li>Marketing Plan</li>
+          <li>Roadmap</li>
+          <li class="create">+ Create New Board</li>
+        </ul>
+      </div>
+      <div class="toggle">
+        <span>🌞</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>🌙</span>
+      </div>
+      <button class="hide-sidebar">🡨 Hide Sidebar</button>
+    </aside>
+
+    <main class="board">
+      <div class="board-header">
+        <h1>Platform Launch</h1>
+        <button class="add-task">+ Add New Task</button>
+      </div>
+
+      <div class="columns">
+        <!-- TODO Column -->
+        <div class="column">
+          <h3><span class="dot blue"></span>TODO (4)</h3>
+          <div class="card">Build UI for onboarding flow <span>0 of 3 subtasks</span></div>
+          <div class="card">Build UI for search <span>0 of 1 subtasks</span></div>
+          <div class="card">Build settings UI <span>2 of 2 subtasks</span></div>
+          <div class="card">QA and test all major user journeys <span>0 of 2 subtasks</span></div>
+        </div>
+
+        <!-- DOING Column -->
+        <div class="column">
+          <h3><span class="dot purple"></span>DOING (5)</h3>
+          <div class="card">Design settings and search pages <span>1 of 1 subtasks</span></div>
+          <div class="card">Add account management endpoints <span>0 of 2 subtasks</span></div>
+          <div class="card">Design onboarding flow <span>1 of 3 subtasks</span></div>
+          <div class="card">Add search endpoints <span>1 of 2 subtasks</span></div>
+          <div class="card">Add authentication endpoints <span>1 of 2 subtasks</span></div>
+        </div>
+
+        <!-- DONE Column -->
+        <div class="column">
+          <h3><span class="dot green"></span>DONE (7)</h3>
+          <div class="card">Conduct 5 wireframe tests <span>1 of 1 subtasks</span></div>
+          <div class="card">Create wireframe prototype <span>1 of 1 subtasks</span></div>
+          <div class="card">Review results of usability tests and iterate <span>3 of 3 subtasks</span></div>
+          <div class="card">Create paper prototypes and conduct usability tests with potential customers <span>2 of 2 subtasks</span></div>
+          <div class="card">Market discovery <span>1 of 1 subtasks</span></div>
+          <div class="card">Competitor analysis <span>2 of 2 subtasks</span></div>
+          <div class="card">Research the market <span>2 of 2 subtasks</span></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
